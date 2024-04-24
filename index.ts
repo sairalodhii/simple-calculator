@@ -3,8 +3,8 @@
 import inquirer from "inquirer";
 
 const answer = await inquirer.prompt([
-  { massage: "Enter first number", type: "number", name: "firstNumber" },
-  { massage: "Enter second number", type: "number", name: "secondNumber" },
+  { massage: "Enter your first number", type: "number", name: "firstNumber" },
+  { massage: "Enter your second number", type: "number", name: "secondNumber" },
   {
     massage: "please select one of the operator to perform operation",
     type: "list",
@@ -26,3 +26,5 @@ else if (answer.operator === "Multipiction") {
 }else {
     console.log("Please select velid number")
 }
+
+console.log("THE END");
